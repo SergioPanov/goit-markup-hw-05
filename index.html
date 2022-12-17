@@ -17,9 +17,9 @@
                 <nav class="header-nav">
                     <a class="header-logo link" href="./index.html">Web<span class="header-logo-second">Studio</span></a>
                 <ul class="header-menu list">
-                    <li><a class="header-link current link" href="./index.html">Студія</a></li>
-                    <li><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="header-link link" href="#">Контакти</a></li>
+                    <li class="link-underline"><a class="header-link current link" href="./index.html">Студія</a></li>
+                    <li class="link-underline"><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="link-underline"><a class="header-link link" href="#">Контакти</a></li>
                 </ul> 
                 </nav>
                 <ul class="header-contact list">
@@ -38,7 +38,7 @@
         <section class="main-section-primary">
             <div class="hero-wrap">
                 <h1>Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section> 
         <section class="section-wrap">
@@ -90,9 +90,13 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="service list">
-                <li><img class="img-list" src="./images/box1.jpg" width="370" alt="програмування"></li>
-                <li><img class="img-list" src="./images/1img.jpg" width="370" alt="телефон"></li>
-                <li><img class="img-list" src="./images/2img.jpg" width="370" alt="колір"></li>
+                <li class="service-list"><img class="img-list" src="./images/box1.jpg" width="370" alt="програмування">
+                <p  class="service-text">Десктопні додатки</p>
+            </li>
+                <li class="service-list"><img class="img-list" src="./images/1img.jpg" width="370" alt="телефон">
+                <p  class="service-text">Мобільні додатки</p></li>
+                <li class="service-list"><img class="img-list" src="./images/2img.jpg" width="370" alt="колір">
+                    <p  class="service-text">Дизайнерські рішення</p></li>
             </ul>
             </div>
         </section>
@@ -254,5 +258,11 @@
         </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="button-modal" data-modal-close>&#10761</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
