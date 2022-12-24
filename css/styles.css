@@ -360,7 +360,7 @@ h1 {
 /* !TODO: Підправити*/
 .card-gallery img, a {
     display: block;
-    transition-property: box-shadow;
+    transition-property: transform,box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -379,7 +379,7 @@ h1 {
     height: 100%;    
     color: var(--logo-color-footer);
     transform: translateY(100%);
-    transition-property: box-shadow;
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(33, 150, 243, 0.9);
